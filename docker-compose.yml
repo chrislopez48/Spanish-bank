@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./backend
+    container_name: spanish-bank-backend-container
+    ports:
+      - "3000:3000"
+    volumes:
+      - spanish-bank-data:/app/data
+
+  frontend:
+    build: ./frontend
+    container_name: spanish-bank-frontend-container
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  spanish-bank-data:
+    external: true
