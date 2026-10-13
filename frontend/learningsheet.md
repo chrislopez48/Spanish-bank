@@ -35,3 +35,5 @@ Invoke-RestMethod `
   -Body '{"spanish":"persistir","english":"to persist"}'
 
   compose file just does all docker terminal commands
+
+  sqllite was stored locally on our pc. when moving over to the mac, we had to remove the copy vocabulary.db line from our dockerfile

@@ -15,8 +15,6 @@ RUN npm install
 
 COPY server.js ./
 
-COPY vocabulary.db ./
-
 #expose port so computer can access it
 EXPOSE 3000
 
